@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="header.css" />
+    
+    
+    
+    <style>
+        
+      
+        body{
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+background-color: #000000;
+background-image: url(css\ background.png);
+
+}
+
+
+form{
+    height: 500px;
+    width: 400px;
+    background-color: rgba(0, 0, 124, 0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+    margin-top: 20px;
+    
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+form .text h4{
+ color: #333;
+ width: 100%;
+ text-align: center;
+}
+form .text h4 a{
+  color: #0e4bf1;
+  text-decoration: none;
+}
+form .text h4 a:hover{
+  text-decoration: underline;
+}
+
+label{
+    display: block;
+    margin-top: 35px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(155, 155, 155, 0.07);
+    border-radius: 8px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+
+button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 15px 0;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+.mybutton:hover{
+    background-color: #77767b;
+
+}
+
+
+.aboutus{
+  margin-top: 50px;
+  display: flex;
+}
+.aboutus div{
+  background: red;
+  width: 300px;
+  border-radius: 6px;
+  padding: 10px 10px 10px 5px;
+  background-color: rgba(255,255,255,0.27);
+  color: #eaf0fb;
+  text-align: center;
+}
+.aboutus div:hover{
+  background-color: rgba(255,255,255,0.47);
+}
+.aboutus .fb{
+  margin-left: 25px;
+}
+
+    </style>
+</head>
+<body>
+  <title>login page</title>
+    <header class="header">
+      <nav class="navbar">
+        <h2 class="logo"><a href="#">Welcome To Bfragrance</a></h2>
+        </label>
+        <ul class="links">
+          <li><a href="mainpage.html">Home</a></li>
+          <li><a href="about us.html">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="buttons">
+          <a href="login.html" class="signin">Sign In</a>
+          <a href="register.html" class="signup">Sign Up</a>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+        
+    </div>
+    <form>
+        <h3>Login Here</h3>
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Email or Phone" id="username">
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password">
+
+        <button class="mybutton">Log In</button>
+        <div class="text">
+            <h4>if you dont have an account <a href="register.html">register now</a></h4>
+          </div>
+        <div class="aboutus">
+          <div class="insta">  Instagram</div>
+          <div class="fb">  Facebook</div>
+        </div>
+    </form>
+</body>
+</html>
